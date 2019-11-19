@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Teste BootStrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+    <style>
+        /*
+        div {
+            background-color: lightgray;
+            margin-bottom: 10px;
+        }
+        */
+        body {
+            background-color: white;
+        }
+
+        .topo {
+            position: sticky;
+            top: 0px;
+            z-index=100;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark topo">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">Logo</a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Page1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Page2</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <form class="form-inline ml-auto" action="https://www.google.com/search" target="_blank">
+                <input class="form-control" type="search" name="q" placeholder="Pesquisar google..." aria-label="Search">
+                <input type="submit" class="btn btn-success" value='OK'>
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <h2>Stacked form</h2>
+        <form action="">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <!-- checkbox -->
+            <div class="form-group">
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="switch1">
+                    <label class="custom-control-label" for="switch1">Toggle me</label>
+                </div>
+            </div>
+            <!-- radio group -->
+            <fieldset class="form-group border px-1">
+                <legend style='width:auto;padding-left:5px;padding-right: 20px; '>Opções</legend>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx" checked>
+                    <label class="custom-control-label" for="customRadio">Custom radio 1</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx2">
+                    <label class="custom-control-label" for="customRadio2">Custom radio 2</label>
+                </div>
+            </fieldset>
+
+            <!--select -->
+            <div class="form-group">
+                <select name="cars" class="custom-select">
+                    <option selected>Custom Select Menu</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="fiat" selected>Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <!--range -->
+            <div class="form-group">
+                <label for="customRange">Custom range</label>
+                <input type="range" class="custom-range" id="customRange" name="points1" value="0">
+            </div>
+
+
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <h2>Modal Example</h2>
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+        </button>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <!-- fade:animation -->
+            <div class="modal-dialog modal-dialog-centered  ">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Modal body..
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+    <div class='container'>
+        <h1>Imagem responsiva</h1>
+        <img src="imagens/cafe.jpg" class="img-fluid img-thumbnail" alt='Maçã'>
+
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <p>Texto 1 do container</p>
+                <img src="imagens/cafe.jpg">
+            </div>
+            <div class="col-sm-6">
+                <p>Texto 1 do container</p>
+                <img src="imagens/cafe.jpg">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <p>Texto do container fluid</p>
+    </div>
+
+    <!--
+    <div class="container-fluid">
+        <h1>Responsive Columns</h1>
+        <p>Resize the browser window to see the effect.</p>
+        <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+        <div class="row">
+            <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+            <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+            <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+            <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+        </div>
+    </div>
+-->
+</body>
+
+</html>

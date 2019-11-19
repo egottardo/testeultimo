@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulário pesquisa google</title>
+    <style type="text/css" rel='stylesheet'>
+        h1:hover {
+            background-color: rgb(127, 255, 212);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        body {
+            border-width: medium;
+            border-color: burlywood;
+            border-style: ridge;
+
+        }
+
+        i {
+            color: green;
+        }
+
+        i {
+            color: red;
+        }
+
+        b {
+            color: pink;
+        }
+
+        b {
+            color: blue !important;
+        }
+
+        b {
+            color: violet;
+        }
+
+        p#intro {
+            color: orangered;
+        }
+
+        p {
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script async src="https://cse.google.com/cse.js?cx=010828804853567270110:t9rarysnlrc"></script>
+    <div class="gcse-search"></div>
+    <h1> Formulário de pesquisa google</h1>
+
+
+    <br />
+    <br />
+    <br />
+    <form method="get" action="http://www.google.com/search" target="frame1" width='200'>
+        <label for="q">Search term</label>
+        <input type='search' placeholder="Digite o termo a pesquisa no google" name='q' size='50' align='left' required>
+        <!--<input type="submit" value="Pesquisar">-->
+
+        <input type='image' src="imagens/enviar.png" width="100" height="30" align='center'>
+        <input type="checkbox" name='tbm' value='isch'> Somente imagens?
+        <br>
+
+        <input type='file' name='arquivos' accept=".png, .jpg, .jpeg" align='left'>
+        <select name='tpcarro'>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select>
+        <input type='reset' value='Limpar'> <br>
+        <input type='url' name='pagina' placeholder="Informe URL Válida"> <br>
+        <fieldset style="width: 200px">
+            <legend align='left'> Sexo</legend>
+            <input id='male' type=radio name='sexo' checked value='M'>
+            <label for='male'> Masculino </label>
+            <input type=radio name='sexo'>Feminino
+        </fieldset>
+        <br>
+        <b>Valor do reajuste</b>:<br>
+        <input type='number' min="10" max="20" required>
+    </form>
+
+
+    <form method="get" action="https://www.youtube.com/results" target="_blank">
+        <input type="text" name='search_query' placeholder="pesquise no youtube">
+        <input type="checkbox" name="sp" value="EgIQAg%3D%3D">
+        <input type="submit" value='Enviar'>
+
+
+    </form>
+    <div>
+        <h1> teste h1 div</h1>
+        <p id='intro'> Teste de div</p>
+
+    </div>
+
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.5265459796856!2d-52.29497268542701!3d-27.63917643054791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e3146bfb02da0b%3A0x9143fc8d7bcea144!2sR.%20Domingos%20Zanella%2C%20104%20-%20Tr%C3%AAs%20Vendas%2C%20Erechim%20-%20RS%2C%2099700-000!5e0!3m2!1spt-BR!2sbr!4v1566915243600!5m2!1spt-BR!2sbr" width="600" height="250" frameborder="0" style="border:0;" allowfullscreen="" align='middle'></iframe>
+    </div>
+    <div>
+        <video src="imagens/video_teste.mp4" preload='none' controls muted poster="imagens/cafe.jpg"></video>
+    </div>
+
+    <div>
+        <audio src="imagens/audio.weba" preload="auto" autoplay controls muted></audio>
+    </div>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/caoNuOHM_3o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <form method="get" action="https://www.cptec.inpe.br/widget/widget.php?p=1899&w=h&c=909090&f=ffffff" target="iframe1">
+        <select name='p'>
+            <option value='1899'> Erechim</option>
+            <option value='1898'> Erebango</option>
+        </select>
+        <input type='submit' value="Previsão Tempo">
+    </form>
+
+
+    <iframe width="215" height="200" name='iframe1' id='iframe1'></iframe>
+
+    <!-- Widget Previs&atilde;o de Tempo CPTEC/INPE --><iframe allowtransparency="true" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" src="https://www.cptec.inpe.br/widget/widget.php?p=1899&w=h&c=909090&f=ffffff" height="200px" width="215px"></iframe><noscript>Previs&atilde;o de <a href="http://www.cptec.inpe.br/cidades/tempo/1899">Erechim/RS</a> oferecido por <a href="http://www.cptec.inpe.br">CPTEC/INPE</a></noscript><!-- Widget Previs&atilde;o de Tempo CPTEC/INPE -->
+    <br>
+    <iframe src='http://www.google.com/custom?q=&btnG=Search' name='iframe2' id='iframe2' width="100%" height="400" align='left'></iframe>
+
+</body>
+
+</html>

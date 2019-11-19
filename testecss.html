@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        #teste {
+            background-image: radial-gradient(#2c2cf8, #8d8ded);
+            height: 200px;
+
+        }
+
+        .teste2 {
+            margin: auto;
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            box-shadow: 0px 0px 88px #0093ff;
+            border-radius: 10px;
+            vertical-align: middle;
+        }
+
+        p {
+            color: red;
+        }
+
+        p.ex1 {
+            display: none;
+        }
+
+        p.ex2 {
+            display: inline;
+            height: 60px;
+        }
+
+        p.ex3 {
+            display: block;
+            height: 60px;
+        }
+
+        p.ex4 {
+            display: inline-block;
+            height: 60px;
+        }
+
+        li {
+            display: inline;
+            margin: 10px;
+        }
+
+        .menu {
+            position: sticky;
+            top: 0px;
+            background-color: orangered;
+            color: white;
+            height: 30px;
+            border-radius: 30px;
+        }
+
+        img.fundo {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .iverm {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+
+        <li>Home</li>
+        <li>Products</li>
+        <li>Location</li>
+        <li>Contact us</li>
+
+    </ul>
+
+
+    <div>
+        <p>Testeyyy</p>
+    </div>
+
+    <p class="teste2">Testexxx</p>
+
+    <form>
+
+    </form>
+    <img class='fundo' src="imagens/logo_transparente.png">
+    <p>Testewww</p>
+    <div id='teste'>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <p>Paragraph 3 in the div.</p>
+        </section>
+    </div>
+
+    <p>Paragraph 4. Not in a div.</p>
+
+    <p>Paragraph 5. Not in a div.</p>
+    <button>Teste</button>
+    <form>
+        <input type="email" name='nome'><br>
+        <input type='checkbox' value='email' checked required> Email <br>
+
+        <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" placeholder="Username" name="usrnm">
+        </div>
+
+        <input type='submit' value='Salvar' class='fab fa-accessible-icon'>
+
+    </form>
+    <button>Salvar <i class='fab fa-accessible-icon'></i></button>
+
+    <h1>The display Property</h1>
+
+
+    <h2>display: none:</h2>
+    <img style="float:right" src="imagens/cafe.jpg">
+
+    <div style="clear:both">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. HELLO WORLD!Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+        </p>
+
+    </div>
+
+    >
+
+    <h2>display: inline:</h2>
+    <div>
+        Lorem <i class="fas fa-cloud iverm"></i> ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex2">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </div>
+
+    <h2>display: block:<i class="fas fa-cloud"></i></h2>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </div>
+
+    <h2>display: inline-block:</h2>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </div>
+
+</body>
+
+</html>

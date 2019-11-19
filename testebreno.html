@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+        a:visited {
+
+            color: red;
+        }
+
+        .x {
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <a href='http://g1.globo.com' target="_blank">Teste link2</a>
+    <div id="x" class="x">
+        <p> teste</p>
+    </div>
+    <input type='text' id='campo1' placeholder="teste">
+    <table id='tb1' border="2">
+        <thead>
+            <tr>
+                <th>nome</th>
+                <th>nota</th>
+                <th>nota2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Paulo</td>
+                <td class="sel">10</td>
+                <td class="sel">9</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Joao</td>
+                <td class="sel">8</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <input type='checkbox' class='ck1'> Check1
+    </div>
+    <div>
+        <input type='checkbox' class='ck1'> Check2
+    </div>
+    <input type='button' id='btn1' value='teste'>
+</body>
+<script type="application/javascript">
+    $(document).ready(function() {
+
+        teste = $('#tb1 td.sel');
+        for (i = 0; i < teste.length; i++) {
+            valor = $(teste[i].parentElement.cells[0]);
+            //alert("Linha:" + valor[0].innerHTML + " coluna:" +(teste[i].cellIndex));
+        }
+
+        $('#tb1 tbody tr').on('click', mostra);
+
+        /*
+                $('#tb1 tbody tr').click(function(){
+                linha=$(this);
+                //alert(linha[0].cells[0].innerText);//coluna1
+                //alert(linha[0].cells[1].innerText);//coluna2
+                //alert(linha[0].cells[2].innerText);//coluna3
+                $('#campo1').val(linha[0].cells[0].innerText);
+                });*/
+        $('#btn1').click(function() {
+            alert($(".ck1:checked").length);
+            //alert("ok");
+        });
+
+    });
+
+    function mostra(e) {
+
+        //alert(e.currentTarget.cells[0].innerText);
+        //alert(e.currentTarget.cells[1].innerText);
+        $("#campo1").val(e.currentTarget.cells[0].innerText);
+        // alert(e[0].cells[0].innerText);
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Cadastre-se </title>
+
+</head>
+
+
+<body>
+    <h2 align="left" id="inicio"><img src="imagens/logo.jpg" width="80" height="80" align='middle'>&nbsp; Cadastre-se no Café Starbuzz <sup>&reg; </sup> </h2>
+    <form>
+        <div>Nome completo*:</div>
+        <input id='nm1' type='text' name='nm' size="50" placeholder='Digite seu nome completo' required /> <br />
+        <br />
+
+        <div>Data Nascimento*:</div>
+        <input id='dt1' type='date' name='dt' placeholder="Digite a Data de Nascimento" required><br />
+        <br />
+
+        <div>Email*:</div>
+        <input id='email1' type='email' name='email' placeholder="Digite o email" required><br />
+        <br />
+
+        <div>Data Nascimento:</div>
+        <input id='dtn' type='date' name='dt'><br />
+
+        <br />
+
+        <fieldset id='grpsexo'>
+            <legend>Sexo*</legend>
+            <input id='sexof' type=radio name='sexo' value='F'>
+
+            <label for="sexof">Feminino</label>
+            <input id='sexom' type=radio name='sexo' value='M'>
+            <label for="sexom">Masculino</label>
+        </fieldset>
+
+        <br />
+
+        <div>Café Preferido </div>
+        <select>
+            <option>Mistura da Casa</option>
+            <option>Café Arábico</option>
+            <option>Capuccino</option>
+        </select>
+        <br /> <br />
+
+        <div>Você toma café .. </div>
+        <input type='checkbox'> Manhã
+        <input type='checkbox'> Tarde
+        <input type='checkbox'> Noite
+
+        <br><br>
+
+        <textarea name='coments' cols='30' rows='4' placeholder="Deixe seu comentário"></textarea>
+        <br>
+        Receber novidades por email
+        <input type='checkbox' name='receber'>
+        <br /> <br />
+        <input type='submit' id='salvar' name='Enviar'>
+        <input type='reset' id='resetar' value='Limpar'>
+        <p align='Right'><b> Copyright <sup> &copy</sup> 2019 Café Starbuzz</b></p>
+
+
+    </form>
+
+</body>
+
+</html>
